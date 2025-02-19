@@ -12,6 +12,7 @@ def show_frame(frame):
 def generate_key( password ):
     """Generate an encryption key from a password."""
     return base64.urlsafe_b64encode(password.ljust(32).encode()[:32])
+    
 
 def encrypt_message(message, password):
     """Encrypts the message using AES encryption."""
@@ -27,6 +28,7 @@ def decrypt_message(hidden_message, password):
         return cipher.decrypt(hidden_message.encode()).decode()
     except Exception:
         return None
+        
 
 # Function to Hide Message
 def hide_message():
