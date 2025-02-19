@@ -1,7 +1,6 @@
 Convert Python Script into an Executable (.exe/.app)**
-You need to package your script so users can run it **without Python installed**.
+To package your script so can run it **without Python installed**.
 
-🛠 Using PyInstaller**
 Install PyInstaller:
 
 pip install pyinstaller
